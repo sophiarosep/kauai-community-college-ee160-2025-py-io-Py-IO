@@ -1,0 +1,24 @@
+var1 = input("how many books did you read last year?)
+# this is just asking this initial question to the user. 
+if books == "0":
+  print("YUCK! Read more!")
+  var2 = "0".          
+# this is just to scold people into reading more. some people need to hear it. 
+
+else:
+  var2 = str(int(var1)*300)
+  print("wow, good job! that's about," var2, "pages read last year! Keep it up!")
+#what this does is you take the number inserted by the user, does math to calculate the pages, and then displays the estimated amount.
+
+
+outfile=open("outfile.txt", "w")
+outfile.write("read this many books" + var1)
+outfile.close() 
+outfile=open("outfile.txt", "a")
+outfile.write("read this many pages"+var2)
+outfile.close()
+# all of this basically opened the outflie in write mode, saved the persons book amount, then clsoed the file, reopened the file in append mode added the pages. 
+
+
+
+
